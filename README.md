@@ -1,109 +1,199 @@
-# 🛡️ CISO Resource Hub
+# CISO Resource Hub
 
-> **CISO'lar ve güvenlik liderleri için kapsamlı kaynak koleksiyonu.**  
-> Risk yönetimi, siber güvenlik programları, uyum, cloud, OT/ICS, AI güvenliği, identity ve data security alanlarında framework, standart, rehber ve best practice'ler.
+A curated **awesome-list style** and **field-ready reference repository** for CISOs, deputy CISOs, security architects, SOC leaders, and incident commanders.
 
----
+This project combines two things:
 
-## 📂 İçerik
+- **Curated external resources** worth reading, following, and reusing
+- **Practical internal-ready content** such as playbooks, decision frameworks, templates, and reference architectures
 
-| Kategori | Açıklama | Kaynak Sayısı |
-|---|---|---|
-| [Risk Yönetimi](./risk-management/README.md) | NIST RMF, FAIR, ISO 27005, OCTAVE | 5 |
-| [Framework & Standartlar](./frameworks-standards/README.md) | NIST CSF, ISO 27001, CIS Controls, MITRE ATT&CK | 5 |
-| [Uyum & Regülasyon](./compliance/README.md) | GDPR, PCI DSS, DORA, KVKK | 4 |
-| [Cloud Security](./cloud-security/README.md) | CSA CCM, CIS Benchmarks, CSPM, CNAPP | 6 |
-| [OT / ICS Güvenliği](./ot-ics-security/README.md) | IEC 62443, NIST 800-82, MITRE ATT&CK ICS | 6 |
-| [AI Güvenliği](./ai-security/README.md) | NIST AI RMF, OWASP LLM Top 10, EU AI Act | 6 |
-| [Identity Security](./identity-security/README.md) | Zero Trust, NIST 800-63, PAM, IAM | 6 |
-| [Data Security](./data-security/README.md) | DSPM, DLP, Sınıflandırma, Privacy Framework | 6 |
-| [Olay Müdahale & BCP](./incident-response/README.md) | NIST 800-61, IR Playbooks, ISO 22301 | 3 |
-| [CISO Liderliği](./ciso-leadership/README.md) | CISM, Gartner, SANS Mind Map | 3 |
-| [Tehdit İstihbaratı](./threat-intelligence/README.md) | CISA, MITRE D3FEND, ENISA, BTK | 4 |
-| [Topluluk & Medya](./community/README.md) | CISSP, USOM, Krebs on Security | 3 |
+It is opinionated toward:
+- regulated enterprises
+- banking and payment institutions
+- telecommunications operators
+- hybrid cloud environments
+- crisis readiness and security leadership
 
 ---
 
-## ⭐ Öne Çıkan Best Practice'ler
+## Why this repo exists
 
-Aşağıdaki kaynaklar operasyonel öncelik taşıyan, doğrudan uygulanabilir rehberlerdir:
+Most security repositories fall into one of two traps:
 
-- 🏆 [FAIR Risk Quantification](./risk-management/README.md#fair-risk-quantification) — Riski parasal değerle ölçme
-- 🏆 [NIST CSF 2.0](./frameworks-standards/README.md#nist-csf-20) — Güncel siber güvenlik çerçevesi
-- 🏆 [CIS Controls v8](./frameworks-standards/README.md#cis-controls-v8) — Önceliklendirilmiş güvenlik kontrolleri
-- 🏆 [CSA Cloud Controls Matrix](./cloud-security/README.md#csa-cloud-controls-matrix) — Cloud güvenlik matrisi
-- 🏆 [IEC 62443](./ot-ics-security/README.md#iec-62443) — OT/ICS güvenlik standardı
-- 🏆 [NIST AI RMF](./ai-security/README.md#nist-ai-rmf) — Yapay zeka risk yönetimi
-- 🏆 [Zero Trust Architecture](./identity-security/README.md#zero-trust-architecture) — Kimlik merkezli mimari
-- 🏆 [DSPM Rehberi](./data-security/README.md#dspm) — Veri güvenliği duruş yönetimi
+- they are only a long list of links
+- they are only a pile of internal documents with no discoverability
+
+This repository is designed to bridge both worlds.
+
+You can use it to:
+- **decide** which controls and investments matter
+- **design** a defensible target-state architecture
+- **respond** under pressure during cyber incidents
+- **improve** detection, resilience, and maturity over time
 
 ---
 
-## 🗺️ CISO Program Haritası
+## Repository Map
 
-```
-CISO Güvenlik Programı
-│
-├── YÖNETİŞİM & STRATEJİ
-│   ├── Risk iştahı & tolerans belirleme
-│   ├── Güvenlik politikaları & standartları
-│   └── Yönetim kurulu raporlama
-│
-├── RİSK YÖNETİMİ
-│   ├── Varlık envanteri & sınıflandırma
-│   ├── Risk değerlendirme (FAIR / NIST RMF)
-│   └── Üçüncü taraf risk yönetimi
-│
-├── TEKNİK PROGRAM
-│   ├── Cloud Security (CSPM, CNAPP)
-│   ├── Identity & Access Management (ZTA, PAM)
-│   ├── Data Security (DLP, DSPM)
-│   ├── OT/ICS Security (IEC 62443)
-│   └── AI Security (NIST AI RMF)
-│
-├── UYUM & DENETİM
-│   ├── Regülasyon takibi (GDPR, KVKK, DORA)
-│   └── İç denetim & sertifikasyon (ISO 27001)
-│
-└── OPERASYON
-    ├── SOC & Tehdit istihbaratı
-    ├── Olay müdahale & BCP
-    └── Güvenlik farkındalığı
+```text
+CISO-Resource-Hub/
+├── docs/
+├── strategy/
+├── awesome/
+├── governance/
+├── decision-frameworks/
+├── architecture/
+├── war-room/
+├── playbooks/
+├── detection/
+├── use-cases/
+├── industries/
+├── templates/
+├── metrics/
+├── maturity/
+├── tooling/
+└── exercises/
 ```
 
 ---
 
-## 🚀 Nasıl Kullanılır
+## Start Here
 
-1. **Framework seçimi**: Organizasyonunuzun sektörüne ve olgunluk düzeyine göre başlangıç çerçevesini seçin
-2. **Risk değerlendirme**: FAIR veya NIST RMF ile mevcut durumu ölçün
-3. **Kontrol uygulama**: CIS Controls IG1 → IG2 → IG3 yol haritasını izleyin
-4. **Uyum haritalama**: Seçilen framework'ü geçerli regülasyonlarla eşleştirin
-5. **Olgunluk takibi**: Yıllık program gözden geçirmesi için kategori bazlı değerlendirme yapın
+### If you are a CISO
+- [Strategy](strategy/)
+- [Decision Frameworks](decision-frameworks/)
+- [War Room](war-room/)
+- [Templates](templates/)
 
----
+### If you are a security architect
+- [Architecture](architecture/)
+- [Governance](governance/)
+- [Tooling](tooling/)
+- [Industries](industries/)
 
-## 🤝 Katkı
+### If you lead SOC or IR
+- [Detection](detection/)
+- [Playbooks](playbooks/)
+- [War Room](war-room/)
+- [Exercises](exercises/)
 
-Yeni kaynak önermek için Pull Request açabilir veya Issue oluşturabilirsiniz.
-
-**Format:**
-```markdown
-### Kaynak Adı
-- **Tür**: Framework / Standart / Rehber / Best Practice / Araç
-- **Yayıncı**: Kurum adı
-- **URL**: https://...
-- **Açıklama**: Kısa açıklama
-- **Neden önemli**: CISO perspektifinden değeri
-```
-
----
-
-## 📄 Lisans
-
-Bu repo [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) lisansı ile paylaşılmaktadır.  
-Kaynakların telif hakları ilgili kurum ve kuruluşlara aittir.
+### If you work in banking or telco
+- [Industry Modules](industries/)
+- [Use Cases](use-cases/)
+- [Regulatory Mapping](governance/regulatory-mapping/)
+- [Zero Trust](architecture/zero-trust/)
 
 ---
 
-*Son güncelleme: 2025 · Toplam: 62 kaynak · 12 kategori*
+## Featured Content
+
+### Crisis Leadership
+- [CISO War-Room Playbook](war-room/ciso-war-room-playbook.md)
+- [Ransomware War-Room Runbook](war-room/ransomware-war-room-runbook.md)
+- [Data Breach War-Room Runbook](war-room/data-breach-war-room-runbook.md)
+
+### Decision Support
+- [Ransomware Decision Framework](decision-frameworks/ransomware-decision-framework.md)
+- [SIEM vs XDR Decision Matrix](decision-frameworks/siem-vs-xdr-decision-matrix.md)
+- [ZTNA vs VPN Decision Matrix](decision-frameworks/ztna-vs-vpn-decision-matrix.md)
+
+### Architecture
+- [Zero Trust Reference Architecture](architecture/zero-trust/zero-trust-reference-architecture.md)
+- [Zero Trust Deployment Patterns](architecture/zero-trust/zero-trust-deployment-patterns.md)
+- [Privileged Access Model](architecture/identity-security/privileged-access-model.md)
+
+### Detection
+- [Detection Strategy](detection/detection-strategy.md)
+- [Detection Coverage Model](detection/detection-coverage-model.md)
+- [MITRE Mapping Guide](detection/mitre-mapping-guide.md)
+
+### Industry Content
+- [Banking Threat Landscape](industries/banking/banking-threat-landscape.md)
+- [Fraud Control Framework](industries/banking/fraud-control-framework.md)
+- [Telco Threat Landscape](industries/telco/telco-threat-landscape.md)
+- [Signaling Security Reference](industries/telco/signaling-security-reference.md)
+
+---
+
+## Awesome Lists
+
+The `awesome/` section contains curated external references grouped by topic:
+
+- [Awesome Frameworks and Standards](awesome/frameworks-and-standards.md)
+- [Awesome Threat Intelligence](awesome/threat-intelligence.md)
+- [Awesome Incident Response](awesome/incident-response.md)
+- [Awesome Cloud Security](awesome/cloud-security.md)
+- [Awesome AppSec](awesome/application-security.md)
+- [Awesome Governance and Risk](awesome/governance-and-risk.md)
+
+Each list favors:
+- primary sources
+- practical material
+- stable references
+- low-noise resources
+
+---
+
+## Build Order
+
+If you want to extend this repository without turning it into a document dump, build in this order:
+
+1. strategy
+2. war-room
+3. architecture
+4. governance
+5. decision-frameworks
+6. detection
+7. industries
+8. exercises
+9. awesome curation
+
+---
+
+## Contribution Principles
+
+Contributions should be:
+- practical
+- concise
+- decision-oriented
+- architecture-aware
+- operationally useful
+
+Avoid:
+- vendor brochure language
+- generic blog-style advice
+- duplicate content
+- dead links
+- long lists without context
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+---
+
+## Suggested Public Positioning
+
+This repository works best as a **public leadership-grade reference repo**:
+- broad enough to be useful
+- deep enough to be credible
+- practical enough to be reused
+
+A good positioning statement is:
+
+> A curated and practical CISO reference hub for strategy, architecture, crisis leadership, detection, and industry-specific security patterns.
+
+---
+
+## Roadmap
+
+- expand detection engineering examples
+- add more banking and telco scenarios
+- add visual architecture diagrams
+- add tabletop exercise inject packs
+- add board communication packs
+- add vendor mapping where it improves implementation clarity
+
+---
+
+## License
+
+MIT License
