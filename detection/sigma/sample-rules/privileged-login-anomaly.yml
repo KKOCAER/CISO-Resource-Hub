@@ -1,0 +1,14 @@
+title: Privileged Login Anomaly
+id: ciso-rh-001
+status: experimental
+description: Detects suspicious privileged sign-in patterns using enrichment from identity telemetry.
+logsource:
+  product: identity
+detection:
+  selection:
+    user_role: admin
+  condition: selection
+level: medium
+tags:
+  - attack.valid_accounts
+  - ciso.identity

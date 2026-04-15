@@ -1,40 +1,80 @@
-# Katkı Rehberi
+# Contributing to CISO Resource Hub
 
-Bu repoya katkıda bulunmak için aşağıdaki adımları izleyin.
+Thank you for improving this repository.
 
-## Yeni Kaynak Ekleme
+## What belongs here
 
-1. Uygun kategori klasörünü açın
-2. `README.md` dosyasına aşağıdaki şablonu ekleyin:
+This repo accepts contributions that improve one or more of the following:
+- strategic decision quality
+- security architecture quality
+- cyber crisis readiness
+- detection coverage and realism
+- banking and telco relevance
+- executive communication
 
-```markdown
-### Kaynak Adı [⭐ Best Practice — opsiyonel]
-- **Tür**: Framework / Standart / Rehber / Best Practice / Araç / Regülasyon
-- **Yayıncı**: Kurum adı
-- **URL**: https://...
-- **Açıklama**: 2-3 cümle açıklama
-- **Neden önemli**: CISO perspektifinden değeri
-```
+## What good content looks like
 
-## Kalite Kriterleri
+Good content is:
+- short enough to be read during work
+- practical enough to be used
+- specific enough to guide decisions
+- structured enough to scale
 
-Eklenecek kaynakların şu kriterleri karşılaması beklenir:
+## Preferred formats
 
-- [ ] Ücretsiz erişilebilir veya kurumsal abonelikle erişilebilir
-- [ ] Güvenilir yayıncı (NIST, ISO, ISACA, SANS, OWASP, devlet kurumları vb.)
-- [ ] Aktif ve güncel (son 5 yıl içinde güncellenmiş)
-- [ ] CISO veya güvenlik programı perspektifinden doğrudan uygulanabilir
-- [ ] Türkçe veya İngilizce
+### Use-case
+- objective
+- threat / scenario
+- assumptions
+- signals / telemetry
+- detection or control logic
+- response actions
+- lessons learned
 
-## Kategori Önerileri
+### Playbook
+- trigger
+- scope
+- immediate actions
+- decision points
+- communications
+- exit criteria
 
-Mevcut kategorilere uymayan yeni bir alan öneriyorsanız:
-1. Issue açın ve kategori gerekçesini açıklayın
-2. En az 3 kaliteli kaynak öneriniz olsun
-3. Diğer kategorilerle örtüşmediğini gösterin
+### Decision framework
+- decision to make
+- inputs
+- options
+- trade-offs
+- recommendation logic
 
-## Pull Request Süreci
+## Pull request guidance
 
-1. Fork → Branch → Değişiklik → PR
-2. PR başlığı: `[kategori] Kaynak adı eklendi`
-3. PR açıklamasında kaynağın değerini kısaca belirtin
+Use focused pull requests.
+One PR should usually improve one of:
+- a single topic
+- a single folder
+- a single incident family
+- a single architecture area
+
+## Style
+
+- Prefer markdown
+- Prefer tables only when they improve scanning
+- Prefer checklists for execution material
+- Prefer simple language over jargon
+- Explain acronyms at first use
+
+## Avoid
+
+Do not add:
+- copied vendor collateral
+- low-value SEO articles
+- generic threat summaries with no action
+- duplicated material
+- unmaintained long link dumps
+
+## Review lens
+
+Before submitting, ask:
+- would a CISO use this to decide something
+- would an architect use this to design something
+- would a responder use this under pressure
